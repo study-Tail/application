@@ -1,0 +1,85 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/index",
+			"style": {
+				"navigationBarTitleText": "服务",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/data",
+			"style": {
+				"navigationBarTitleText": "数据分析",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/mainApp",
+			"style": {
+				"navigationBarTitleText": "维保预约",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/mainHistory",
+			"style": {
+				"navigationBarTitleText": "维保历史",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/data-similar",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	    ,{
+            "path" : "pages/pay",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		// #ifdef H5
+		"navigationStyle": "custom",
+		// #endif
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+
+	},
+	"tabBar": {
+		"fontSize": "30rpx",
+		"list": [{
+				"pagePath": "pages/home",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/index",
+				"text": "服务"
+			},
+			{
+				"pagePath": "pages/data",
+				"text": "数据分析"
+			}
+		]
+	}
+}
